@@ -1,0 +1,16 @@
+aws:
+  accounts:
+  - name: dev1
+    short-name: ""
+    description: ""
+    account-number: <AWS_ACCOUNT_ID>
+    profile: <AWS_PROFILE>
+  regions:
+  - us-west-2
+
+aws-ec2-cw-stats:
+  metrics:
+  - metric: CPUUtilization
+    namespace: AWS/EC2
+    statistics: Minimum,Maximum,Average
+    minutes: 60
